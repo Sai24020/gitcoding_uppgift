@@ -224,7 +224,8 @@ footer, header {
     padding: 10px 20px;
     border-radius: 5px;
     font-family: var(--font-family-footer);
-    color: var(--primary-color) ;
+    color: var(--primary-color);
+    justify-content: space-between;
    
 }
 
