@@ -1,0 +1,271 @@
+/* makes sizing simpler */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* remove default spacing */
+/* force styling of type through styling, rather than elements */
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+/* dark mode user-agent-styles dark eller light */
+html {
+  color-scheme: dark light;
+}
+
+/*google font*/
+.roboto-regular {
+    font-family: "Roboto", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+  
+@media (max-width: 1080px) {
+ :root {
+    --primary-color: #000000;
+    --secondary-color: white;
+       
+    --font-size-base: 2rem;
+    --font-family-body: "Roboto", sans-serif;
+    --font-family-footer: "Roboto", sans-serif; 
+    }
+}
+
+/* min body height */
+body {
+    color: var(--secondary-color) ;
+    font-size: var(--font-size-base); /*32px*/
+    min-height: 100vh;
+    text-align: end;
+    font-family: var(--font-family-body);
+    background-image: url(coding.jpg);
+    display: block;
+
+    max-width: 100%;  
+    flex-direction: column;
+    justify-content: start;
+}
+
+/*continar*/  
+#continar {
+      background: #587291;
+      color: var(--secondary-color) ;
+      border-radius: 0px;
+      padding: 10px;
+      text-align: center;
+      width: 1469px;
+      height: 997px;
+      top: 924px;
+     
+      gap: 0px;
+      opacity: 0px;
+}
+
+aside {
+     margin-inline-start: auto;
+     max-width: 100%;
+     margin: 0 auto;
+     width: 1469px; 
+     height: 1007px;    
+     gap: 0;
+
+    margin-top: 1725px;
+    margin-bottom: 4rem;
+    margin-left: 3px;
+    margin-right: 3px;
+
+}
+
+/*header*/
+header {
+    background-color: white;
+    height: 85px;
+    width: 1384px;
+    font-family: var(--font-family-body);
+    color: var(--primary-color) ;
+    border: 1px 0px 0px 0px;
+    padding-top: 1rem;
+    padding-right: 1rem ;
+    box-shadow: 8px 8px 8rem whitesmoke;
+    text-align: center;
+    margin-top: 70px;
+    margin: 70px;
+    margin-left: 40px;
+    margin-right: 40px;
+    gap: -500px;
+   /* opacity: 50%;*/ 
+}
+
+.gallery h2  {
+    font-family: var(--font-family-body);
+    color: var(--secondary-color) ;
+    font-weight: bold;
+    font-size: 32px; 
+}
+
+header a {
+    font-family: var(--font-family-body);
+    color: var(--primary-color) ;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 5rem;
+}
+ 
+.header-text a:hover {
+    color: #0056b3;
+    transition: color 0.3s;
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    * {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
+    }
+}
+
+/*buttom*/
+button {
+    background: #5B2E48;
+    color: var(--primary-color);
+    font-size: 30px;
+    border-radius: 0px;
+    margin-top: 1rem;
+    padding: 10px;
+    width: 20%;
+
+    animation-name: bounce;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+}
+
+/*@keyframes bounce {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+}*/
+
+
+button {
+    color:  color: var(--primary-color);
+    height: 67px;
+    width: 216px;
+    border-radius: 10px;
+    margin: 8.5rem auto;    
+    animation-name: idle;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes idle {
+0% {
+  transform: scale(1);
+}
+100% {
+  transform: scale(1.1);
+}
+}
+
+.dancing-circle:active {
+animation-name: dance;
+animation-duration: 3s;
+animation-iteration-count: infinite;
+animation-timing-function: ease-in-out;
+}
+
+@keyframes dance {
+0% {
+  transform: translate(0, 0) scale(1) rotate(0deg);
+  background-color: #ff5733;
+}
+25% {
+  transform: translate(100px, -50px) scale(1.2) rotate(45deg);
+}
+50% {
+  transform: translate(-100px, 50px);
+  background-color: #28a745;
+}
+100% {
+  transform: translate(0, 0) scale(1) rotate(360deg);
+  background-color: #ff5733;
+}
+}
+  
+/*buttom::after {
+    border-inline-start-color: 1px solid #b3a2ac;
+}*/
+
+/* footer */
+footer a:focus,
+button a:focus {
+    outline: 3px solid lightseagreen;
+    outline-offset: 2px;
+    background-color: antiquewhite;
+
+}
+
+footer, header {
+    flex-direction: row;
+   /* list-style: none;*/
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-family: var(--font-family-footer);
+    color: var(--primary-color) ;
+   
+}
+
+footer a {
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 20px;
+    text-align: end;
+   
+}
+
+.footer-text a {
+    color: var(--primary-color);
+    line-height: 1.6;
+    
+}
+
+.footer-text ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-text ul li {
+    margin: 10px 0;
+}
+
+.footer-text ul li a {
+    text-decoration: none;
+    font-size: 30px;
+    color: var(--primary-color);
+    transition: color 0.3s;
+}
+
+.footer-text ul li a:hover {
+    color: #0056b3;
+    background-color: rgb(76, 140, 223);
+}
+
+/* box */
+.box {
+    box-align: 1px solid #F2F2F2;
+    font-family: var(--font-family-footer);
+
+}
