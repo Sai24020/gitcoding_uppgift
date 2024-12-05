@@ -59,9 +59,10 @@ body {
       padding: 10px;
       text-align: center;
       width: 1469px;
-      height: 997px;
+      height: 810px;
       top: 924px;
      
+      left: 9px;
       gap: 0px;
       opacity: 0px;
 }
@@ -219,7 +220,7 @@ button a:focus {
 }
 
 footer, header {
-    flex-direction: row;
+   /* flex-direction: row;
    /* list-style: none;*/
     padding: 10px 20px;
     border-radius: 5px;
@@ -239,27 +240,39 @@ footer a {
 
 .footer-text a {
     color: var(--primary-color);
-    line-height: 1.6;
+    /*line-height: 1.6;*/
+   
     
 }
 
-.footer-text ul {
-    list-style-type: none;
+.footer-text {
     padding: 0;
-}
-
-.footer-text ul li {
     margin: 10px 0;
+    justify-content: space-between;
+    list-style-type: none; /* utan cirkel list */
+    width: 1451px;
+    height: 164px;
+    top: 1731px;
+    gap: 0px;
+    opacity: 0px;
+
 }
 
-.footer-text ul li a {
+.footer-text a {
     text-decoration: none;
     font-size: 30px;
     color: var(--primary-color);
     transition: color 0.3s;
+    width: 531px;
+    height: 121px;
+    top: 1752px;
+    left: 871px;
+    gap: 0px;
+    opacity: 0px;
+
 }
 
-.footer-text ul li a:hover {
+.footer-text a:hover {
     color: #0056b3;
     background-color: rgb(76, 140, 223);
 }
