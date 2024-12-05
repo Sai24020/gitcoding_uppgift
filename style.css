@@ -58,15 +58,21 @@ section .gallery {
       background: #587291;
       color: var(--secondary-color) ;
       border-radius: 0px;
-      padding: 10px;
+      padding: 0.8rem;
       text-align: center;
-      width: 1469px;
+    /* width: 1469px;*/
+      width: calc(100% - 0.5rem);
       height: 810px;
       top: 924px;
      
-      left: 9px;
+    /*  left: 9px;*/
       gap: 0px;
       opacity: 0px;
+      position: absolute;
+      bottom: 0.5rem;
+      left: -0.25rem;
+  
+
 }
 
 aside {
