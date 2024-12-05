@@ -16,6 +16,7 @@
 /* dark mode user-agent-styles dark eller light */
 html {
   color-scheme: dark light;
+
 }
 
 /*google font*/
@@ -52,7 +53,8 @@ body {
 }
 
 /*continar*/  
-#continar {
+#continar, 
+section .gallery {
       background: #587291;
       color: var(--secondary-color) ;
       border-radius: 0px;
