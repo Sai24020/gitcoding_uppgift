@@ -45,8 +45,8 @@ body {
     text-align: end;
     font-family: var(--font-family-body);
     background-image: url(coding.jpg);
-    display: block;
-
+    /*display: block;*/
+    background-repeat: no-repeat;
     max-width: 100%;  
     flex-direction: column;
     justify-content: start;
@@ -68,7 +68,7 @@ section .gallery {
 
 }
 
-aside {
+main {
      margin-inline-start: auto;
      max-width: 100%;
      margin: 0 auto;
@@ -105,7 +105,7 @@ header {
 
 .gallery h2  {
     font-family: var(--font-family-body);
-    color: var(--secondary-color) ;
+    color: var(--secondary-color);
     font-weight: bold;
     font-size: 32px; 
 }
@@ -119,7 +119,7 @@ header a {
 }
  
 .header-text a:hover {
-    color: #0056b3;
+    color: #b30071;
     transition: color 0.3s;
 }
 
@@ -133,20 +133,20 @@ header a {
     }
 }
 
-/*buttom*/
+/*buttom
 button {
-    background: #5B2E48;
+    background: #dd3d9a;
     color: var(--primary-color);
     font-size: 30px;
     border-radius: 0px;
     margin-top: 1rem;
     padding: 10px;
-    width: 20%;
+    width: 10%;
 
     animation-name: bounce;
     animation-duration: 1s;
     animation-iteration-count: infinite;
-}
+}*/
 
 /*@keyframes bounce {
     0% {
@@ -162,7 +162,7 @@ button {
 
 
 button {
-    color:  color: var(--primary-color);
+    color: var(--secondry-color);
     height: 67px;
     width: 216px;
     border-radius: 10px;
@@ -171,6 +171,8 @@ button {
     animation-duration: 1.5s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+
+}
 }
 
 @keyframes idle {
