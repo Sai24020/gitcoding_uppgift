@@ -39,17 +39,25 @@ html {
 
 /* min body height */
 body {
-    color: var(--secondary-color) ;
+    /*color: var(--secondary-color) ;
     font-size: var(--font-size-base); /*32px*/
-    min-height: 100vh;
+    /*min-height: 100vh;
     text-align: end;
     font-family: var(--font-family-body);
     background-image: url(coding.jpg);
     /*display: block;*/
-    background-repeat: no-repeat;
+    /*background-repeat: no-repeat;
     max-width: 100%;  
     flex-direction: column;
-    justify-content: start;
+    justify-content: start;*/
+    background-image: url(coding.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center;
+    text-align: end;
+    /*background-color: #E9E9E9;*/
+    padding: 2.5rem 1.25rem;
+    /*height: calc(48.4vh - 5rem);*/
 }
 
 /*continar*/  
@@ -62,8 +70,12 @@ section .gallery {
       text-align: center;
       width: 1469px;
       height: 810px;
-      top: 924px;
-     
+      /*top: 924px;*/
+      background-position: center;
+      background-size: 100% auto;
+      
+        grid-column: full-start / content-end;
+      
   
 
 }
@@ -173,7 +185,7 @@ button {
     animation-direction: alternate;
 
 }
-}
+
 
 @keyframes idle {
 0% {
